@@ -7,9 +7,12 @@ It is intended for educational purposes to practice design and verification conc
 ## Simulation Environment
 All simulation and verification for this project was developed and simulated on EDA Playground.
 
+![waveform scheme](documents/waveform.jpg)
+
 ## Design Description
 The FIFO is a design that uses gray-coded read and write pointers, to safely synchronize data transfers between two clock domains.
 A two-stage synchronizer is implemented for each pointer to ensure metastability mitigation.
+
 See design-diagram: documents/gray_fifo_scheme.pdf.
 
 ![design scheme](documents/Arch_scheme.jpg)
@@ -19,15 +22,16 @@ See design-diagram: documents/gray_fifo_scheme.pdf.
 - Synchronization registers for cross-domain communication.
 - Full and empty flag generation.
 
-![waveform scheme](documents/waveform.jpg)
-
 ## Project Structure
-design/      → RTL design files
-tb/          → Testbench and verification files
-documents/   → Diagrams and wave examples
+design - RTL design files
+
+tb - Testbench and verification files
+
+documents - Diagrams and wave examples
 
 ## Verification Environment
 The verification is written in SystemVerilog using UVM methodology.
+
 See environment-diagram: documents/gray_fifo_ENV_scheme.pdf
 
 ![env scheme](documents/Env_scheme.jpg)
@@ -41,5 +45,5 @@ The testbench includes:
 ## Future Improvements
 - Resolve verification issue: DUT non-deterministic behavior.
 - Implement more functional coverage for verification completeness.
-- Add V-plan document.
+- Add full V-plan document.
 
