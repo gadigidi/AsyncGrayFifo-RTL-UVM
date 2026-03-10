@@ -19,6 +19,8 @@ See design-diagram: documents/gray_fifo_scheme.pdf.
 - Synchronization registers for cross-domain communication.
 - Full and empty flag generation.
 
+![waveform scheme](documents/waveform.jpg)
+
 ## Project Structure
 design/      → RTL design files
 tb/          → Testbench and verification files
@@ -41,7 +43,3 @@ The testbench includes:
 - Implement more functional coverage for verification completeness.
 - Add V-plan document.
 
-## Author
-Gadi Teicher
-gadigidi@gmail.com
-© 2025. All rights reserved
